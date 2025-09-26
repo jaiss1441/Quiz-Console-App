@@ -5,7 +5,7 @@ public class Question {
     private String option2; 
     private String option3;
     private String option4;
-    private int answer;
+    private String answer;
     public int getId() {
         return id;
     }
@@ -42,10 +42,10 @@ public class Question {
     public void setOption4(String option4) {
         this.option4 = option4;
     }
-    public int getAnswer() {
+    public String getAnswer() {
         return answer;
     }
-    public void setAnswer(int answer) {
+    public void setAnswer(String answer) {
         this.answer = answer;
     }
     @Override
@@ -54,7 +54,7 @@ public class Question {
                 + ", option3=" + option3 + ", option4=" + option4 + ", answer=" + answer + "]";
     }
     public Question(int id, String question, String option1, String option2, String option3, String option4,
-            int answer) {
+            String answer) {
         this.id = id;
         this.question = question;
         this.option1 = option1;
